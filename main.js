@@ -33,7 +33,7 @@ function getGitHubProfileInfos() {
       userBio.textContent = data.bio
       userLink.href = data.html_url
       userImage.src = data.avatar_url
-      userLogin.textContent = data.login_
+      userLogin.textContent = data.login
     })
   /*fetch é um comando, ele bate na url,  pega o que a api responde, ele guarda */
   /*arrow functions é uma funçao pequena, contraida , ela é anonima, pq pra ir mais rapido n poe o nome, porem n tem como chamar eka depois ne */

@@ -1,0 +1,106 @@
+/*Cascating Stylesheet, folha de estilo em cascata
+      esse estilo q pus agora sobreescreve o q o navegador coloca por padrao  */
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+  /*--grey é uma variavel, quando quiser usar essa cor so por o nome */
+  height: 100%;
+  /*altura de 100% da pagina */
+  font-family: 'Roboto', sans-serif;
+  /*font serif tem os detalhes em baixo, a sans-serif nao tem*/
+  -webkit-font-smoothing: antialiased;
+  /*essa fonte so vai funcionar nos navegadores q tem webkit, os chrome, safari*/
+}
+
+body {
+  /*display maneira de vizualizaçao dos elementos, 
+           place-itens alinhamento dos itens  */
+  display: grid;
+  place-items: center;
+}
+
+main {
+  /*conteudo principal*/
+  background: url(images/background.png);
+  /*background é fundo tudo relacionado a ele */
+  width: 375px;
+  height: 812px;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--grey);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+
+  position: relative;
+  /*esse position relative é relativo ao position absoluto do .avatar span , se nao colocar esse aki , o absolute pega a pag toda */
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  /*> mostra qual elemento do avatar quero pegar*/
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  /* object-fit: cover aruma a configuraçao da imagem pq ela fica desregulada quando mexe a esmo na altura e largura*/
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  /* propriedade: valor */
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  /* cor da letra, escrito*/
+  text-decoration: none;
+  /*decoraçao do texto*/
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+
+  list-style: none;
+  /*esse list-style:none tira as bolinhas q o li põe */
+  padding: 0;
+  /*tira o espaçamento entre elas */
+
+  display: flex;
+  /*o flex faz com q os elementos fiquem um ao lado do outro no eixo x  */
+  gap: 0.5rem;
+  /*espaços entre eles */
+
+  justify-content: center;
+  /*alinhamento ao centro*/
+}

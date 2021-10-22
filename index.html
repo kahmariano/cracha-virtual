@@ -1,0 +1,80 @@
+<!--html 
+  hyperText - hiper texto, é um texto grande
+  Markup - marcaçoes
+  serve para fazermos marcaçoes
+tags -  tem as tags para n escrever texto puro
+  Language - linguagem 
+pq tem sintaxe, jeito certo de escrever -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kah Mariano - DoWhile 2021</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!--pq essa tag nao fecha igual as outras ?
+    pq ela nao tem conteudo, ela so tem atributos nela mesma, ai tem auto fechamento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!--main(conteudo geral) seria uma caixa e o div outra caixa q esta mais ao centro, uma caixa menor-->
+      <div class="container">
+        <div class="avatar">
+          <span> <img src="images/build.svg" alt="Selo Rocketseat" /></span>
+          <img
+            src="https://lorempixel.com/185/185/people/"
+            alt="Imagem pessoal"
+            id="userImage"
+          />
+          <!--alt significa alternativa, ou seja, se n achar a imagem ele aparece o texto-->
+        </div>
+        <h1 id="userName">kahbarber</h1>
+        <a id="userLink" href="https://github.com/kahmariano" target="_blank">
+          <img src="images/github.svg" alt="ícone github" />
+          <span id="userLogin">Mayk brito</span>
+        </a>
+        <p id="userBio">
+          An instructor focused on helping people start programming for web
+        </p>
+        <ul id="socialLinks">
+          <!--tag de lista nao ordenada -->
+          <li class="youtube">
+            <a href="https://youtube.com/maykbrito" target="_blank">
+              <!-- target é pq pq insentiva a pessoa  a volta para o site ja q vai abrir mais uma aba com o link--><img
+                src="images/youtube.svg"
+                alt="ícone e link do youtube"
+            /></a>
+          </li>
+          <li class="facebook">
+            <a href="https://facebook.com/" target="_blank"
+              ><img src="images/facebook.svg" alt="ícone e link do facebook"
+            /></a>
+          </li>
+          <li class="instagram">
+            <a href="https://instagram.com/kahbarber" target="_blank"
+              ><img src="images/instagram.svg" alt="ícone e link do instagram"
+            /></a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com" target="_blank"
+              ><img src="images/twitter.svg" alt="ícone e link do twitter"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
+<!-- senha aula 1 #RumoAoPróximoNível -->
+<!--senha aula 2 #Protagonistas-->
+<!--senha aula 3 #ImaginarConstruirTransformar-->

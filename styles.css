@@ -26,10 +26,12 @@ body {
 
 main {
   /*conteudo principal*/
-  background: url(images/background.png);
-  /*background é fundo tudo relacionado a ele */
-  width: 375px;
-  height: 812px;
+  background: url(images/background.svg) no-repeat center/cover;
+  /*background é fundo tudo relacionado a ele.
+vw é o espaço da tela toda, ele se adapta de acordo com o tamanho da tela , center vai alinhar, e o cover "aumentar" o backgraund pra nao ficar branco em volta   */
+  width: 100vw;
+  min-height: 812px;
+  height: 100vw;
 }
 
 .container {
